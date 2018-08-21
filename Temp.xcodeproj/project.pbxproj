@@ -12,6 +12,7 @@
 		2A5C40CE212C883100F42DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C40CC212C883100F42DDD /* Main.storyboard */; };
 		2A5C40D0212C883300F42DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C40CF212C883300F42DDD /* Assets.xcassets */; };
 		2A5C40D3212C883300F42DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C40D1212C883300F42DDD /* LaunchScreen.storyboard */; };
+		2A5C40DD212C885100F42DDD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C40DC212C885100F42DDD /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2A5C40CF212C883300F42DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A5C40D2212C883300F42DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A5C40D4212C883300F42DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5C40DA212C885000F42DDD /* Temp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Temp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A5C40DB212C885100F42DDD /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2A5C40DC212C885100F42DDD /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,12 @@
 				2A5C40C8212C883100F42DDD /* AppDelegate.swift */,
 				2A5C40CA212C883100F42DDD /* ViewController.swift */,
 				2A5C40CC212C883100F42DDD /* Main.storyboard */,
+				2A5C40DB212C885100F42DDD /* TableViewCell.h */,
+				2A5C40DC212C885100F42DDD /* TableViewCell.m */,
 				2A5C40CF212C883300F42DDD /* Assets.xcassets */,
 				2A5C40D1212C883300F42DDD /* LaunchScreen.storyboard */,
 				2A5C40D4212C883300F42DDD /* Info.plist */,
+				2A5C40DA212C885000F42DDD /* Temp-Bridging-Header.h */,
 			);
 			path = Temp;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					2A5C40C4212C883100F42DDD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -136,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5C40CB212C883100F42DDD /* ViewController.swift in Sources */,
+				2A5C40DD212C885100F42DDD /* TableViewCell.m in Sources */,
 				2A5C40C9212C883100F42DDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
 				INFOPLIST_FILE = Temp/Info.plist;
@@ -289,6 +299,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gameofapps.Temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Temp/Temp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
 				INFOPLIST_FILE = Temp/Info.plist;
@@ -307,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gameofapps.Temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Temp/Temp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
